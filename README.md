@@ -21,7 +21,7 @@ class MagicHero(Hero):
 
 
 # Create a few superhero objects
-iron_man = TechHero(name="Tony Stark", alias="Iron Man", powers=["Super Strength", "Flying"], tech_gadgets=["Repulsor", "Hulkbuster", "AI suit"])
+iron_man = TechHero(name="Tony Stark", alias="Iron Man", powers=["Super Strength","Flying"], tech_gadgets=["Repulsor", "Hulkbuster", "AI suit"])
 
 
 # Interact with the objects
@@ -30,4 +30,3 @@ print("Powers:", iron_man.display_powers())
 print("Gadgets:", iron_man.display_gadgets())
 print(iron_man.attack())  # Attack with gadgets
 print(iron_man.rest())
-
