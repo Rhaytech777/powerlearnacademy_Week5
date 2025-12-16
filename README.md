@@ -1,4 +1,5 @@
-# Week 5:class Hero:
+# Week 5:
+class Hero:
     def __init__(self, name, alias, powers, health=100, stamina=100):
         self.name = name  # Real name of the superhero
         self.alias = alias  # Alias or superhero name (e.g., 'Spiderman')
