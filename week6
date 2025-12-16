@@ -1,0 +1,25 @@
+import numpy as np
+import pandas as pd
+import requests
+import matplotlib.pyplot as plt
+
+numbers = np.array(range(1, 11))
+print(numbers.mean())
+
+data = {
+    "Age": [25, 30, 35, 40, 45],
+    "Salary": [50000, 60000, 70000, 80000, 90000]
+}
+df = pd.DataFrame(data)
+print(df.describe())
+
+response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
+api_data = response.json()
+print(api_data["title"])
+
+values = [1, 2, 3, 4, 5]
+plt.plot(values)
+plt.title("Simple Line Plot")
+plt.xlabel("Index")
+plt.ylabel("Value")
+plt.show()
